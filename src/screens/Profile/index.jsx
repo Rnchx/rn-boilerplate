@@ -1,6 +1,10 @@
+// comandos do react-native
 import { Text, View } from "react-native";
 
+// estilo
 import styles from "./styles";
+
+//componentes
 import Title from "../../components/Title";
 import TouchButton from "../../components/TouchButton";
 

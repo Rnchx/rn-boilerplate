@@ -1,14 +1,15 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  title: {
-    fontSize: 15,
-    fontWeight: "bold",
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
   button: {
     marginTop: 20,
     padding: 10,
-    backgroundColor: "red",
+    backgroundColor: "#C9D4FF",
     borderRadius: 5,
   },
 });

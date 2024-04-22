@@ -1,18 +1,23 @@
 import { View } from "react-native";
 
-import styles from "./styles";
+import styles from "./style";
 import Title from "../../components/Title";
 import TouchButton from "../../components/TouchButton";
 import { user } from "../../data/Profile";
+import { useState } from "react";
 
-export default function Category() {
+export default function Users() {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+
   return (
     <View style={styles.container}>
-      <Title title="Category" />
+      <Title title="Users" />
 
       <TouchButton route="Home" title="Go to Home" />
 
-      <TouchButton route="Teste" title="Go to Teste" />
+      <TouchButton route="Profile" title="Go to Profile" data={user} />
+
     </View>
   );
 }

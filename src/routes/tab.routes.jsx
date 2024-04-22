@@ -5,13 +5,14 @@ import Home from "../screens/Home";
 import Profile from "../screens/Profile";
 import Category from "../screens/Category";
 import { user } from "../data/Profile";
+import StackRoutes from "./stack.routes";
 
 const Tab = createBottomTabNavigator();
 
 const TabRoutes = () => {
   return (
     <Tab.Navigator screenOptions={{ headerShown: false }}>
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Profile"
         component={Profile}
         initialParams={{ data: user }}
@@ -27,10 +28,10 @@ const TabRoutes = () => {
           tabBarActiveTintColor: "#131313",
           tabBarInactiveTintColor: "#D6D6D6",
         }}
-      />
+      /> */}
       <Tab.Screen
         name="Home"
-        component={Home}
+        component={StackRoutes}
         options={{
           tabBarIcon: ({ focused }) => (
             <Feather
@@ -45,7 +46,7 @@ const TabRoutes = () => {
         }}
       />
 
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Category"
         component={Category}
         options={{
@@ -60,7 +61,7 @@ const TabRoutes = () => {
           tabBarActiveTintColor: "#131313",
           tabBarInactiveTintColor: "#D6D6D6",
         }}
-      />
+      /> */}
     </Tab.Navigator>
   );
 };
